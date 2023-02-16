@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="530.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PreGameScenes.PreGameController">
+  <Label alignment="CENTER" layoutX="169.0" layoutY="37.0" prefHeight="27.0" prefWidth="239.0" text="ADD PLAYERS" textAlignment="CENTER" textFill="WHITE">
+      <font>
+         <Font name="Arial Bold Italic" size="32.0" />
+      </font></Label>
+  <TextField fx:id="nameTextFieldInput" layoutX="93.0" layoutY="145.0" />
+  <TextField fx:id="ageTextFieldInput" layoutX="93.0" layoutY="195.0" />
+  <Text fill="WHITE" layoutX="36.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NAME">
+      <font>
+         <Font name="Arial Bold Italic" size="14.0" />
+      </font></Text>
+  <Text fill="WHITE" layoutX="46.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="AGE">
+      <font>
+         <Font name="Arial Bold Italic" size="14.0" />
+      </font></Text>
+  <Button alignment="CENTER" contentDisplay="CENTER" layoutX="93.0" layoutY="244.0" mnemonicParsing="false" onAction="#addPlayerProfile" prefHeight="27.0" prefWidth="77.0" style="-fx-background-color: white;" text="Add">
+      <font>
+         <Font name="Arial Bold Italic" size="13.0" />
+      </font></Button>
+  <Button alignment="CENTER" contentDisplay="CENTER" layoutX="436.0" layoutY="322.0" mnemonicParsing="false" onAction="#deletePlayer" prefHeight="27.0" prefWidth="133.0" style="-fx-background-color: white;" text="Remove">
+      <font>
+         <Font name="Arial Bold Italic" size="13.0" />
+      </font></Button>
+  <TableView fx:id="tableView" layoutX="302.0" layoutY="112.0" prefHeight="209.0" prefWidth="267.0" style="-fx-background-color: white;">
+    <columns>
+      <TableColumn fx:id="IdColumn" prefWidth="59.0" text="ID" />
+      <TableColumn fx:id="nameColumn" prefWidth="159.0" text="Name" />
+      <TableColumn fx:id="ageColumn" prefWidth="48.0" text="Age" />
+    </columns>
+  </TableView>
+  <Label fx:id="showMessage" alignment="CENTER" layoutX="-6.0" layoutY="382.0" prefHeight="15.0" prefWidth="600.0" textAlignment="CENTER" textFill="WHITE" />
+  <Button fx:id="editPlayer" alignment="CENTER" contentDisplay="CENTER" layoutX="177.0" layoutY="244.0" mnemonicParsing="false" onAction="#editPlayer" prefHeight="27.0" prefWidth="77.0" style="-fx-background-color: white;" text="Edit">
+      <font>
+         <Font name="Arial Bold Italic" size="13.0" />
+      </font></Button>
+  <Button alignment="CENTER" contentDisplay="CENTER" layoutX="302.0" layoutY="322.0" mnemonicParsing="false" onAction="#loadTableData" prefHeight="27.0" prefWidth="133.0" style="-fx-background-color: white;" text="Load">
+      <font>
+         <Font name="Arial Bold Italic" size="13.0" />
+      </font></Button>
+</AnchorPane>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane2" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GameScenes.GameMenuController">
+   <Label layoutX="132.0" layoutY="156.0" prefHeight="89.0" prefWidth="366.0" style="-fx-background-color: black;" text="Random match generation &#10;successful!" textAlignment="CENTER" textFill="WHITE">
+      <font> <Font size="32.0" /> </font>
+      <effect>
+         <Glow level="0.42" />
+      </effect>
+   </Label>
+   <Button alignment="CENTER" contentDisplay="CENTER" layoutX="489.0" layoutY="341.0" mnemonicParsing="false" onAction="#returnToMatchSelect" prefHeight="27.0" prefWidth="81.0" style="-fx-background-color: black;" text="OK" textFill="WHITE" />
+</AnchorPane>
